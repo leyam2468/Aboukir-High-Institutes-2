@@ -163,6 +163,7 @@ body {
     width: 50%;
 }
 
+
 .header-area .head-info h2 span {
     color: var(--color-one);
 }
@@ -197,6 +198,11 @@ nav.bg-dark {
     font-weight: 900;
 }
 
+@media (min-width:320px)and (max-width:1024px) {
+    .header-area .head-info h2 {
+        font-size: 40px
+    }
+}
 
 /* About us */
 .about-area {
@@ -263,4 +269,22 @@ nav.bg-dark {
     left: 50%;
     transform: translateX(-100px);
 
+}
+
+.Doctores .card {
+    box-shadow: 2px 2px 5px #888;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.Doctores .card:hover {
+    transform: scale(1.1);
+}
+
+.Doctores .card .card-body .card-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
