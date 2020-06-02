@@ -115,3 +115,18 @@ function handelactive(e) {
 	/* add active class to the clic el */
 	e.target.classList.add("active");
 }
+window.onscroll = () => {
+	scrollToTop = document.querySelector(".scrollToTop");
+	if (this.pageYOffset > 500) {
+		scrollToTop.style.display = "block";
+	}
+	if (this.pageYOffset < 500) {
+		scrollToTop.style.display = "none";
+	}
+};
+let scrol = document.querySelector(".scrollToTop");
+scrol.addEventListener("click", (e) => {
+	document.querySelector(e.target.dataset.section).scrollIntoView({
+		behavior: "smooth",
+	});
+});

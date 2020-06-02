@@ -90,7 +90,7 @@ body {
 }
 
 .setting-container .options-box .colors-list li:nth-child(3) {
-	background-color: yellow;
+	background-color: #3f51b5;
 }
 
 .setting-container .options-box .colors-list li:nth-child(4) {
@@ -98,7 +98,7 @@ body {
 }
 
 .setting-container .options-box .colors-list li:nth-child(5) {
-	background-color: blue;
+	background-color: #00bcd4;
 }
 
 .setting-container .options-box span {
@@ -187,6 +187,17 @@ nav.bg-dark {
 .nav-link {
 	color: white !important;
 	font-weight: 900;
+	transition: 0.5s;
+	position: relative;
+}
+.nav-link:hover::before {
+	transition: 0.5s;
+	content: "";
+	position: absolute;
+	background-color: var(--color-one);
+	width: 80%;
+	height: 2px;
+	bottom: 0;
 }
 
 .nav-link:hover {
@@ -313,14 +324,84 @@ nav.bg-dark {
 	z-index: 3;
 	position: relative;
 	margin-bottom: 20px;
+	min-height: 200px;
+	padding: 10px 0;
 }
 .feauter .feauter-box i {
 	color: var(--color-one);
+	text-shadow: 2px 2px 10px #444;
 }
 .feauter .feauter-box h4 {
 	font-size: 30px;
 	font-weight: bold;
 	margin: 10px 0;
 }
-.feauter .feauter-box p {
+/* Our Team */
+.our-team {
+	padding: 30px 0;
+}
+.our-team .team-box {
+	text-align: center;
+}
+.our-team .team-box img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 1px solid #888;
+	padding: 3px;
+	box-shadow: 1px 1px 5px #20202057;
+	margin: 10px 0;
+	transition: transform 0.5s;
+}
+.our-team .team-box img:hover {
+	transform: scale(1.1);
+}
+.our-team .team-box h3 {
+	font-weight: bold;
+	color: var(--color-one);
+	text-shadow: 2px 2px 2px #999;
+	margin: 20px 0;
+}
+.our-team .team-box i {
+	font-weight: bold;
+	color: #444;
+	letter-spacing: 5px;
+	cursor: pointer;
+}
+
+/* fotter */
+.fotter {
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	font-weight: bold;
+}
+.fotter p {
+	margin: 0;
+}
+.fotter a {
+	margin: 0;
+	color: var(--color-one);
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+/* scroling */
+.scrollToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: var(--color-one);
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px #888;
+	z-index: 102;
+	display: none;
+	transition: all 1s ease;
+}
+.scrollToTop i {
+	color: white;
 }
