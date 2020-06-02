@@ -69,7 +69,13 @@ ColorLi.forEach((li) => {
 
 /* site background option */
 let headerAreaBg = document.querySelector(".header-area");
-let bgArray = ["banner.jpg", "nambers.jpg", "hotel-3.jpg", "stitus-2.jpg"];
+let bgArray = [
+	"banner.jpg",
+	"nambers.jpg",
+	"hotel-3.jpg",
+	"stitus-2.jpg",
+	"banner2.jpg",
+];
 let bgInterval;
 
 const BGoption = document.querySelectorAll(".background-option span");
