@@ -170,6 +170,10 @@ body {
 	line-height: 2;
 	font-size: 20px;
 }
+.header-area .head-info i {
+	color: var(--color-one);
+	margin: 5px 10px;
+}
 
 .navbar {
 	padding: 10px;
@@ -298,7 +302,7 @@ nav.bg-dark {
 
 /* feauter */
 .feauter {
-	background-image: url(/imgs/banner2.jpg);
+	background-image: url(../imgs/banner2.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
